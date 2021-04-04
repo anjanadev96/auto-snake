@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+body {
+    overflow: hidden;
+}
+@-webkit-keyframes logo-ani{
+    50%{-webkit-transform: scale(1.3,1.3);}
+   100%{-webkit-transform: scale(1.0,1.0);}
+ }
+
+ @keyframes logo-ani{
+    50%{transform: scale(1.3,1.3);}
+   100%{transform: scale(1.0,1.0);}
+ }
+
+#menu #start-button,
+#menu #restart-button,
+#speed-value{
+    -webkit-animation: logo-ani 1000ms linear infinite;
+            animation: logo-ani 1000ms linear infinite;
+}
+
+#start-button,
+#restart-button {
+    cursor: pointer;
+}
+
+::selection {
+    background: white;
+}
+
+::-moz-selection {
+    background: white;
+}
+
+.game{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Train One', cursive;
+    background: white;
+}
+
+
+.game-header{
+    font-size: 0;
+}
+
+canvas{
+    display: block;
+    border-style: dashed;
+    border-color: black;
+}
+canvas:focus{
+    outline: black;
+}
+
+/* Top Styles */
+.game h1{
+    display: inline-block;
+    font-size: 40px;
+    color: white ; 
+    font-family: "VT323" !important;
+}
+.score{
+    display: block;
+    font-size: 20px;
+    color: black;
+}
+
+.score-value{
+    font-size: inherit;
+}
+
+/* Menu Screen Style */
+#menu{
+    display: block;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+}
+
+#menu h2{
+    -webkit-animation: logo-ani 1000ms linear infinite;
+            animation: logo-ani 1000ms linear infinite;
+    margin-bottom: 0px;
+    
+}
+
+#menu a{
+    font-size: 30px;
+}
+
+canvas {
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+#face-detector {
+    display: none;
+}
+
+#setting {
+    display: none;
+}
+
+#menu {
+    display: block;
+}
+
+#restart-button {
+    display: none;
+}
+
+#start-button {
+    display: none;
+}
+
+#gameover {
+    display: none;
+}
